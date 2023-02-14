@@ -20,7 +20,7 @@ st.write(filterDF)
 #P3 Lessons floder - copy codes to create chaers
 import plotly.express as px
 fig = px.line(filterDF, x=filterDF.index, y="Close")
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
 
 
 st.write(begDate)
