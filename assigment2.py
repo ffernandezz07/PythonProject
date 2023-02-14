@@ -5,4 +5,5 @@ import plotly.express as px
 df = pd.read_excel("Data Manipulation Worksheet.xlsx", sheet_name ="Financing Table Clean", parse_dates=['DATE'])
 df.set_index(['DATE'], inplace=True)
 
+st.title('Financial Deals Data through Plotly Graphs')
 st.write(df)
