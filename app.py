@@ -4,7 +4,7 @@ import streamlit as st
 st.write("APP WORKING!")
 
 tickers = ['AAPL','DIS','IBM']
-st.selectbox("Pick a ticker", tickers)
+ticker = st.selectbox("Pick a ticker", tickers)
 
 df = pd.read_csv(ticker + '.csv', parse_dates=['Date'], index_col=['Date'])
 
