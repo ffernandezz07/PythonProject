@@ -19,4 +19,4 @@ legend = st.sidebar.selectbox("Pick a category for the legend filter", options=l
 hover = st.sidebar.selectbox("Pick a category for the hover", options=legend_options)
 
 
-st.write('Total Deal Value by ' + x_ax + ' by ' + legend)
+st.write('Total Deal Value by ' + x_ax.title() + ' by ' + legend.title())
