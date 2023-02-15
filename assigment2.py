@@ -9,8 +9,8 @@ st.title('Financial Deals Data through Plotly Graphs')
 st.write('Total Deal Value by Type by Industry')
 
 chart_type = ["Bar", "Box & Whisker", "Sunburst","Three Map"]
-x_axis = list(pd.dfcolumns.values) 
+x_names = list(df.columns.values) 
 
 
 st.sidebar.radio("Pick a chart type", options=chart_type)
-st.sidebar.selectbox("Pick a category for the x-axis", options=x_axis)
+st.sidebar.selectbox("Pick a category for the x-axis", options=x_names)
