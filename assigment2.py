@@ -6,4 +6,8 @@ df = pd.read_excel("Data Manipulation Worksheet.xlsx", sheet_name ="Financing Ta
 df.set_index(['DATE'], inplace=True)
 
 st.title('Financial Deals Data through Plotly Graphs')
-st.write(df)
+st.write('Total Deal Value by Type by Industry')
+
+chart_type = ["Bar", "Box & Whisker", "Sunburst","Three Map"]
+
+st.sidebar.radio("Pick a chart type", options=chart_type)
