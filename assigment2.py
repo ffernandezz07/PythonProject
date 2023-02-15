@@ -17,4 +17,4 @@ chart_type = st.sidebar.radio("Pick a chart type", options=chart_type)
 x_ax = st.sidebar.selectbox("Pick a category for the x-axis", options=x_names)
 legend = st.sidebar.selectbox("Pick a category for the legend filter", options=legend_options)
 
-st.write('Total Deal Value by ' + x_ax + ' by ' + 'legend')
+st.write('Total Deal Value by ' + x_ax + ' by ' + legend)
